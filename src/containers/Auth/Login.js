@@ -58,6 +58,11 @@ class Login extends Component {
             isShowPassword: !this.state.isShowPassword // Lấy giá trị ngược lại
         })
     }
+    handleKeyDown = (Event) => {
+        if (Event.key === 'Enter') {
+            this.handleLogin();
+        }
+    }
     render() {
         // code type JSX
         return (
@@ -81,6 +86,7 @@ class Login extends Component {
                                     className="form-control"
                                     placeholder='Enter your password'
                                     onChange={(Event) => { this.handleOnChangePassword(Event) }}
+                                    onKeyDown={(Event) => this.handleKeyDown(Event)}
                                 />
                                 <span onClick={() => { this.handleShowHidePassword() }}>
                                     <i className={this.state.isShowPassword ? 'far fa-eye' : 'far fa-eye-slash'}></i>

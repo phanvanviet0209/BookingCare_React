@@ -1,0 +1,85 @@
+.doctor-schedule-container {
+    margin-left: 15px;
+    height: 100%;
+    border-right: 1px solid #eee;
+
+    .all-schedule {
+        select {
+            min-width: 130px;
+            color: #337ab7;
+            font-weight: bold;
+            text-align: center;
+            padding: 3px;
+            border-bottom: 1px solid #999;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            cursor: pointer;
+
+            option {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .all-available-time {
+        .text-calendar {
+            color: #333;
+            margin: 10px 0;
+
+            span {
+                text-transform: uppercase;
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
+
+        .time-content {
+            gap: 15px;
+            flex-wrap: wrap;
+
+            button {
+
+                border: none;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 10px 15px;
+                background: #fff8ae;
+                margin-right: 8px;
+                line-height: 1.3333;
+                display: inline-block;
+                vertical-align: middle;
+                white-space: nowrap;
+                text-align: center;
+                color: #333;
+                font-weight: bolder;
+                position: relative;
+                text-decoration: none;
+                border-radius: 3px;
+
+                &:hover {
+                    background: #45c3d2;
+                    transition: 500ms ease all;
+                    color: white;
+                }
+            }
+
+            .btn-vi {
+                min-width: 130px;
+            }
+
+            .btn-en {
+                min-width: 170px;
+            }
+
+
+            .no-schedule {
+                text-align: center;
+                margin: 60px 0;
+                font-style: italic;
+                font-size: 14px;
+            }
+        }
+    }
+}

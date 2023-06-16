@@ -6,7 +6,7 @@ class HomeFooter extends Component {
     render() {
         return (
             <div className='home-footer'>
-                <p>&copy; 2023 Phan Van Viet. More Infomation, please visit my facebook office.<a target='_blank' href='https://www.facebook.com/profile.php?id=100063100556943'> Click here</a></p>
+                <p>&copy; 2023 Booking Care Online. More Infomation, please visit my facebook office.<a target='_blank' href='https://www.facebook.com/profile.php?id=100063100556943'> Click here</a></p>
             </div>
         );
     }

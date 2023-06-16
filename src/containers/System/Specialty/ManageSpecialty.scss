@@ -1,0 +1,59 @@
+.manage-specialty-container {
+    margin-top: 15px;
+    padding: 0 15px;
+
+    .ms-title {
+        text-align: center;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .add-new-specialty {
+        margin-top: 20px;
+
+        // .btn-save-specialty {
+        .btn-save-specialty {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            cursor: pointer;
+            width: 90px;
+            height: 38px;
+            background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+            border-radius: 30px;
+            border: 1px solid #0071ba;
+            transition: all 0.2s ease;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #606060;
+            text-shadow: 0 1px #fff;
+        }
+
+        .btn-save-specialty:hover {
+            box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+        }
+
+        .btn-save-specialty:active {
+            box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+        }
+
+        .btn-save-specialty:focus {
+            box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+        }
+
+        .form-group {
+            .form-control-file {
+                width: fit-content;
+                block-size: fit-content;
+            }
+        }
+
+        // }
+    }
+
+}

@@ -1,0 +1,50 @@
+.profile-doctor-container {
+    margin-bottom: 15px;
+
+    .intro-doctor {
+        display: flex;
+
+        .content-left {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #eee;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+
+        .content-right {
+            width: calc(100% - 80px);
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+
+            .up {
+                font: 14px/1.5 'Montserrat', sans-serif;
+                outline: none;
+                line-height: 1.2;
+                font-weight: bold;
+                color: #337ab7;
+            }
+
+            .down {
+                color: #555;
+                font-size: 13px;
+                text-align: justify;
+
+                .time-infor {
+                    color: #337ab7;
+                }
+            }
+
+        }
+    }
+
+    .price {
+        .currency {
+            padding-left: 5px;
+            color: #337ab7;
+        }
+    }
+}

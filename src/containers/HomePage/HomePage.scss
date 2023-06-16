@@ -1,7 +1,7 @@
 // reset slick slider css
 .slick-prev {
     left: -10px !important;
-    z-index: 1000;
+    z-index: 10;
     height: 48px !important;
     width: 44px !important;
     background: #fff !important;
@@ -15,14 +15,14 @@
 .slick-prev::before,
 .slick-next::before {
     font-family: FontAwesome !important;
-    color: red !important;
+    color: #d8d8d8 !important;
     // content: "\f060" !important;
 
 }
 
 .slick-next {
     right: -10px !important;
-    z-index: 1000;
+    z-index: 10;
     height: 48px !important;
     width: 44px !important;
     background: #fff !important;
@@ -33,7 +33,10 @@
     }
 }
 
-//
+.slick-disabled {
+    display: none !important;
+}
+
 .section-share {
     &.section-specialty {
         background: #fff;
@@ -52,6 +55,7 @@
     }
 
     &.section-about {
+        background: #f5f5f5;
         height: 500px !important;
         border-top: 1px solid #f5f5f5;
         border-bottom: 1px solid #f5f5f5;
@@ -69,24 +73,43 @@
                 background-color: #eee;
 
                 &.section-specialty {
-                    background-image: url('../../assets/specialty/co-xuong-khop.jpg');
+                    // background-image: url('../../assets/specialty/co-xuong-khop.jpg');
                 }
 
                 &.section-medical-facility {
                     background: #f5f5f5;
-                    background-image: url('../../assets/medical-facility/csyt1.jpg');
+                    // background-image: url('../../assets/medical-facility/csyt1.jpg');
                 }
 
                 &.section-outstanding-doctor {
-                    background-image: url('../../assets/outstanding-doctor/avt-doctor.jpg');
+                    // background-image: url('../../assets/outstanding-doctor/avt-doctor.jpg');
                     width: 120px;
                     height: 120px;
                     border-radius: 50%;
                 }
 
-                &.section-handbook {
-                    background-image: url('../../assets/handbook/hb1.jpg');
-                }
+                // &.section-handbook1 {
+                //     background-image: url('../../assets/handbook/142734-top-dia-chi-kham-tai-mui-hong-hai-ba-trung-uy-tin.png');
+                // }
+
+                // &.section-handbook2 {
+                //     background-image: url('../../assets/handbook/133359-top-dia-chi-kham-tai-mui-hong-uy-tin-tai-my-dinh-nam-tu-liem.png');
+                // }
+
+                // &.section-handbook3 {
+                //     background-image: url('../../assets/handbook/124421-top-dia-chi-kham-nam-khoa-uy-tin-quan-thanh-xuan.png');
+                // }
+
+                // &.section-handbook4 {
+                //     background-image: url('../../assets/handbook/153037-di-ngoai-ra-mau-kham-benh.png');
+                // }
+
+
+            }
+
+            .handbook-content {
+                padding: 15px;
+                text-align: center;
             }
         }
     }
@@ -140,6 +163,7 @@
 
     .section-customize {
         padding: 5px;
+        cursor: pointer;
 
         .customize-border {
             border: 1px solid #eee;
